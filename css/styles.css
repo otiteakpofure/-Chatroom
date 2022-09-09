@@ -19,3 +19,28 @@ body{
     box-shadow: none !important;
 }
 
+.img-parent{
+ 
+  margin-top: 90px;
+  text-align: center;
+}
+.img-chg{
+    animation-name: image-move;
+    animation-duration:30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    
+}
+   
+@keyframes image-move{
+    0%{
+        transform: rotate(1800deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
